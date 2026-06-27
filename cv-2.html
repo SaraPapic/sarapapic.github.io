@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+  Edit the rows below. Add a file named "cv.pdf" in this folder and it will
+  show inline in the preview box automatically — the download link points
+  to the same file. Until you add it, the preview box will just look empty
+  or show a browser error; that's expected.
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — CV</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body class="wide-page">
+
+<div class="page">
+
+  <div class="letterhead">
+    <div class="mark">
+      <img src="photo.jpg" alt="Your Name" onerror="this.style.display='none'">
+    </div>
+    <div>
+      <h1>Your Name</h1>
+      <p class="tagline">Designer · Developer · [Your third thing]</p>
+    </div>
+  </div>
+
+  <nav class="site-nav">
+    <a href="index.html">About</a>
+    <a href="publications.html">Publications</a>
+    <a href="cv.html" class="active">CV</a>
+  </nav>
+  <hr class="rule">
+
+  <p class="label">Preview</p>
+  <div class="cv-viewer">
+    <iframe src="cv.pdf" title="CV preview"></iframe>
+  </div>
+  <a class="cv-download" href="cv.pdf">Download as PDF ↓</a>
+
+  <section>
+    <p class="label">Education</p>
+
+    <div class="cv-row">
+      <span class="cv-when">[2018–2022]</span>
+      <span class="cv-what"><strong>[Degree]</strong>, [Institution]</span>
+    </div>
+
+    <div class="cv-row">
+      <span class="cv-when">[2014–2018]</span>
+      <span class="cv-what"><strong>[Degree]</strong>, [Institution]</span>
+    </div>
+  </section>
+
+  <section>
+    <p class="label">Experience</p>
+
+    <div class="cv-row">
+      <span class="cv-when">[2023–Present]</span>
+      <span class="cv-what"><strong>[Role]</strong>, [Company] — [one line on what you did]</span>
+    </div>
+
+    <div class="cv-row">
+      <span class="cv-when">[2021–2023]</span>
+      <span class="cv-what"><strong>[Role]</strong>, [Company] — [one line on what you did]</span>
+    </div>
+
+    <div class="cv-row">
+      <span class="cv-when">[2019–2021]</span>
+      <span class="cv-what"><strong>[Role]</strong>, [Company] — [one line on what you did]</span>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      <a href="mailto:you@example.com">Email</a>
+      <span class="sep">·</span>
+      <a href="https://github.com/yourusername">GitHub</a>
+      <span class="sep">·</span>
+      <a href="https://linkedin.com/in/yourusername">LinkedIn</a>
+    </p>
+    <p class="meta">Last edited <span id="year"></span>.</p>
+  </footer>
+
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
